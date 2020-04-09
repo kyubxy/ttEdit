@@ -12,9 +12,4 @@ How to use
 
 The programs are made to be run side by side, make changes to the file using the writer and click on the viewer to update.
 
-Changelog
-======================================
-0.1.1 - minor update
-*changed the times on the side to account for new timetables. in the event we're sent back to school, 0.1.2 will be released, which will just be a revert to 0.1.0
 
-0.1 - release

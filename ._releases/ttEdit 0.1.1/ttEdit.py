@@ -7,7 +7,7 @@ def Rect (x, y, w, h):
     return Rectangle(Point(x, y), Point(x + w, h + y))
 
 def Start ():
-    win = GraphWin("ttEdit viewer 0.1", 1000, 450)  # give title and dimensions
+    win = GraphWin("ttEdit viewer 0.1.1", 1000, 450)  # give title and dimensions
     #attempt to start writer
     try:
         os.startfile ("ttEditWriter.exe")
@@ -66,7 +66,7 @@ def Main(win):
     CellHeight = 50
 
     # Draw left hand
-    ref = ["1\n(9:00 - 10:00)", "2\n(10:00 - 11:00)", "Recess (11:00 - 11:15)", "3\n(11:15 - 12:10)", "4\n(12:15 - 1:15)", "Lunch (1:15 - 2:00)", "5\n(2:00 - 3:00)", "6\n(3:00 - 4:00)"]
+    ref = ["1\n(10:30 - 11:10)", "2\n(11:10 - 11:50)", "break (11:50 - 12:00)", "3\n(12:00 - 12:40)", "4\n(12:40 - 1:20)", "break (1:20 - 2:00)", "5\n(2:00 - 2:40)", "6\n(2:40 - 3:20)"]
     for r in range(len(ref)):
         LHRect = Rect (0, CellHeight * r + CellHeight, CellWidth, CellHeight)
         LHRect.setFill(GRAY)
